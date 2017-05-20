@@ -1,0 +1,46 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	align-items: center;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+}
+
+.name {
+	display: flex;
+	font-family: 'Viga', sans-serif;
+	
+	height: 40%;
+	padding-top: 10%;
+}
+
+.name-letter {
+	font-size: 1500%;
+}
+
+.about {
+	border: solid black 30px;
+	border-radius: 50%;
+	height: 100vh;
+	width: 90%;
+
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-bottom: 10%;
+	background-color: black;
+	color: white;
+}
+
+.about-listing {
+	font-size: 40%;
+	font-family: arial;
+	padding: 2%;
+
+}
