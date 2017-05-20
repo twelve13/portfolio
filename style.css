@@ -24,7 +24,7 @@ body {
 
 .about {
 	border: solid black 30px;
-	border-radius: 50%;
+	border-radius: 40%;
 	height: 100vh;
 	width: 90%;
 
@@ -34,8 +34,8 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 	padding-bottom: 10%;
-	background-color: black;
-	color: white;
+/*	background-color: black;
+	color: white;*/
 }
 
 .about-listing {
@@ -43,4 +43,27 @@ body {
 	font-family: arial;
 	padding: 2%;
 
+}
+
+.projects {
+	border: solid black 30px;
+	height: 90vh;
+	align-self: top;
+	position: relative;
+	bottom: 280px;
+	width: 480px;
+	background-color: black;
+	color: white;
+}
+
+.projects-nav * {
+	display: flex;
+	font-size: 200%;
+	color: gray;
+}
+
+.blurb {
+	font-size: 200%;
+	padding-top: 20%;
+	color: white;
 }
