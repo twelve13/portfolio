@@ -13,7 +13,6 @@ body {
 .name {
 	display: flex;
 	font-family: 'Viga', sans-serif;
-	
 	height: 40%;
 	padding-top: 10%;
 }
@@ -22,38 +21,11 @@ body {
 	font-size: 1500%;
 }
 
-.about {
-	border: solid black 30px;
-	border-radius: 40%;
-	height: 100vh;
-	width: 90%;
-
-	align-self: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	padding-bottom: 10%;
-/*	background-color: black;
-	color: white;*/
-}
-
 .about-listing {
 	font-size: 40%;
 	font-family: arial;
 	padding: 2%;
 
-}
-
-.projects {
-	border: solid black 30px;
-	height: 90vh;
-	align-self: top;
-	position: relative;
-	bottom: 280px;
-	width: 480px;
-	background-color: black;
-	color: white;
 }
 
 .projects-nav * {
@@ -65,5 +37,35 @@ body {
 .blurb {
 	font-size: 200%;
 	padding-top: 20%;
+	color: white;
+}
+
+.projects {
+	color: red;
+	background-color: black;
+	position: relative;
+	height: 180px;
+	width: 32px;
+	top: 40px;
+
+	margin: 0 15px;
+}
+
+.about {
+	border: black solid 29px;
+	border-radius: 40%;
+	height: 83px;
+	width: 54px;
+	position: relative;
+	top: 82px;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.studii {
 	color: white;
 }
