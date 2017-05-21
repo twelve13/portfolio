@@ -1,10 +1,10 @@
 console.log("hello");
 var projects = $(".projects");
-
-
+var projectsWrapper = $(".projects-wrapper");
+var projectsNav = $(".projects-nav");
 var about = $(".about");
 var projectListing = $("project-listing");
-
+var close = $(".close");
 
 var studii = $(".studii");
 var studiiBlurb = $(".studii-blurb")
@@ -16,17 +16,16 @@ var blurb = $(".blurb");
 var final= $(".final");
 var aboutListing = $(".about-listing");
 
+let projectsClicked = false;
 
-studii.hide();
-endangered.hide();
-simon.hide();
-final.hide();
+projectsWrapper.hide();
+close.hide();
+
 
 blurb.hide();
 aboutListing.hide();
 
-endangeredBlurb.hide();
-simonBlurb.hide();
+
 
 
 
@@ -58,7 +57,12 @@ simon.on("click", function(){
 	simonBlurb.show();
 })
 
-projects.click(function() {
+
+projects.click(
+function() {
+	if (projectsClicked === false){
+
+
 
 
 	projects.animate({
@@ -66,13 +70,29 @@ projects.click(function() {
 		width: "540px",
 		top: "-=310px"
 	}, 2000)
-	studiiBlurb.show();
+	projectsWrapper.show();
+
+	// studiiBlurb.show();
 	projectListing.show();
-	studii.show();
-	endangered.show();
-	simon.show();
-	final.show();
+	projectsNav.show();
+	
+	close.show();
+	projectsClicked = true;
+
+}
 })
+
+	close.click(function(){
+		projects.animate({
+		height: "180px",
+		width: "32px",
+		top: "40px"
+	}, 2000)
+	projectsWrapper.hide();
+	close.hide();
+	projectsClicked = false;
+	});
+
 
 about.click(function(){
 
