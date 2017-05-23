@@ -15,7 +15,7 @@ var simonBlurb = $(".simon-blurb");
 var blurb = $(".blurb");
 var final= $(".final");
 var aboutListing = $(".about-listing");
-
+var experience = $(".experience");
 let projectsClicked = false;
 
 projectsWrapper.hide();
@@ -24,6 +24,7 @@ close.hide();
 
 blurb.hide();
 aboutListing.hide();
+experience.hide();
 
 
 
@@ -103,4 +104,5 @@ about.click(function(){
 		top: "-=310px"
 	}, 2000)
 	aboutListing.show();
+	experience.show();
 })

@@ -21,13 +21,6 @@ body {
 	font-size: 1500%;
 }
 
-.about-listing {
-	font-size: 40%;
-	font-family: arial;
-	padding: 2%;
-
-}
-
 .projects-nav * {
 	display: flex;
 	font-size: 200%;
@@ -61,11 +54,66 @@ body {
 	background-color: white;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: space-around;
 	flex-wrap: wrap;
 
+}
+
+.about-listing {
+	box-sizing: border-box;
+	font-family: viga;
+	font-size: 145%;
+	padding-top: 3%;
+	text-align: center;
+}
+
+.about-listing:nth-of-type(1) {
+	/*font-size: 160%;*/
+	padding-left: 23%;
+	padding-right: 23%;
+}
+
+.about-listing:nth-of-type(2) {
+/*	font-size: 160%;*/
+	padding: 0 18%;
+
+}
+
+.about-listing:nth-of-type(3) {
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.experience {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: arial;
+}
+
+/*.experience-listing:nth-of-type(1) {
+	box-sizing: border-box;
+	padding: 7%;
+	width: 30%;
+}
+
+.experience-listing:nth-of-type(2) {
+	box-sizing: border-box;
+	padding: 7%;
+	width: 30%;
+}*/
+
+img {
+	height: 50px;
+}
+
+.experience-listing {
+	box-sizing: border-box;
+	padding: 7%;
+	text-align: center;
+	width: 33%;
 }
 
 .studii, {
 	color: white;
 }
+
