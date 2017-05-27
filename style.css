@@ -57,7 +57,9 @@ body {
 
 .name-letter {
 	font-size: 1500%;
+	position: relative;
 }
+
 
 .projects-nav * {
 	display: flex;
