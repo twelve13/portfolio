@@ -4,17 +4,55 @@
 }
 
 body {
-	align-items: center;
+	align-content: center;
 	display: flex;
+	flex-wrap: wrap;
 	height: 100vh;
 	justify-content: center;
+	width: 100%;
+}
+
+.nav {
+	display: flex;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 200%;
+	justify-content: flex-start;
+	width: 80%;
+}
+
+.nav div {
+	background-color: black;
+	color: white;
+	border-radius: 25%;
+	margin: 0 2% 10% 2%;
+	padding: 5px;
+	text-align: center;
+	width: 160px;
 }
 
 .name {
 	display: flex;
 	font-family: 'Viga', sans-serif;
 	height: 40%;
-	padding-top: 10%;
+	justify-content: center;
+/*	padding-top: 10%;*/
+	width: 100%;
+}
+
+/*.last-name {
+	font-family: 'Viga', sans-serif;
+	font-size: 400%;
+}*/
+
+.title-wrapper {
+	display:flex;
+	justify-content: flex-end;
+	width: 80%;
+}
+
+.title {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 300%;
 }
 
 .name-letter {
