@@ -13,6 +13,7 @@ var contactButton = $(".contact-button");
 var nav = $(".nav");
 var title = $(".title");
 
+
 var studii = $(".studii");
 var studiiBlurb = $(".studii-blurb")
 var endangered = $(".endangered");
@@ -32,7 +33,7 @@ var aboutClicked = false;
 projectsWrapper.hide();
 blurb.hide();
 aboutWrapper.hide();
-// experience.hide();
+closeAbout.hide();
 
 
 
@@ -103,22 +104,28 @@ function() {
 aboutButton.click(function(){
 	if (aboutClicked === false){
 
-	about.animate({
-		height: "80vh",
-		width: "80%",
-		top: "-=310px"
-	}, 2000)
-	aboutWrapper.show();
-	// experience.show();
+		about.animate({
+			height: "80vh",
+			width: "80%",
+			top: "-=310px",
+		}, 2000)
+	
+		aboutWrapper.show();
+		closeAbout.show();
+		
+		nameLetter.animate({
+			"font-size": "0"
+		}, 2000)
 
-	aboutClicked = true;
-	nav.hide(2000);
-	nameLetter.hide(2000);
-	projects.hide(2000);
-	title.hide(2000);
-}
+		projects.animate({
+			height: "0",
+			width: "0",
+			top: "-=40px"
+		}, 2000);
 
-})
+		aboutClicked = true;
+	}
+});
 
 closeAbout.click(function(){
 		about.animate({
@@ -126,13 +133,19 @@ closeAbout.click(function(){
 		width: "54px",
 		top: "82px"
 	}, 2000)
-	aboutWrapper.hide();
-	// experience.hide();
-	
-	aboutClicked = false;
-	nav.show(2000);
-	nameLetter.show(2000);
-	projects.show(2000);
-	title.show(2000);
 
+	aboutWrapper.hide();
+	closeAbout.hide();
+
+	nameLetter.animate({
+		"font-size": "1500%"
+	}, 2000)
+
+	projects.animate({
+		height: "180px",
+		width: "32px",
+		top: "+=40px"
+	}, 2000)
+
+	aboutClicked = false;	
 	})
