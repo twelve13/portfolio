@@ -174,8 +174,3 @@ simon.on("click", function(){
 	endangeredProject.hide();
 	simonProject.show();
 })
-
-
-
-
-
