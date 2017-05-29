@@ -4,22 +4,64 @@
 }
 
 body {
-	align-items: center;
+	align-content: center;
 	display: flex;
+	flex-wrap: wrap;
 	height: 100vh;
 	justify-content: center;
+	width: 100%;
+}
+
+.nav {
+	display: flex;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 200%;
+	justify-content: flex-start;
+	width: 70%;
+}
+
+.nav div {
+	background-color: black;
+	color: white;
+	border-radius: 25%;
+	margin: 0 2% 10% 2%;
+	padding: 5px;
+	text-align: center;
+	width: 160px;
 }
 
 .name {
 	display: flex;
 	font-family: 'Viga', sans-serif;
 	height: 40%;
-	padding-top: 10%;
+	justify-content: center;
+/*	padding-top: 10%;*/
+	width: 100%;
+}
+
+/*.last-name {
+	font-family: 'Viga', sans-serif;
+	font-size: 400%;
+}*/
+.name1, .name2 {display:flex}
+.title-wrapper {
+	display:flex;
+	justify-content: flex-end;
+	width: 60%;
+}
+
+
+.title {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 300%;
 }
 
 .name-letter {
 	font-size: 1500%;
+	position: relative;
+	z-index: -1;
 }
+
 
 .projects-nav * {
 	display: flex;
@@ -34,14 +76,18 @@ body {
 }
 
 .projects {
-	color: red;
+/*	color: red;*/
 	background-color: black;
 	position: relative;
 	height: 180px;
 	width: 32px;
 	top: 40px;
-
 	margin: 0 15px;
+}
+
+.close-projects {
+	color: white;
+	text-align: right;
 }
 
 .about {
@@ -56,6 +102,10 @@ body {
 	justify-content: center;
 	align-items: space-around;
 	flex-wrap: wrap;
+/*	z-index: 5;*/
+	overflow: scroll;
+	/*overflow-wrap: break-word;*/
+
 
 }
 
@@ -68,26 +118,28 @@ body {
 }
 
 .about-listing:nth-of-type(1) {
-	/*font-size: 160%;*/
-	padding-left: 23%;
-	padding-right: 23%;
+	padding-left: 12%;
+	padding-right: 12%;
 }
 
 .about-listing:nth-of-type(2) {
-/*	font-size: 160%;*/
-	padding: 0 18%;
+
+	padding-left: 8%;
+	padding-right: 8%;
 
 }
 
-.about-listing:nth-of-type(3) {
+/*.about-listing:nth-of-type(3) {
 	padding-left: 7%;
 	padding-right: 7%;
-}
+}*/
 
 .experience {
 	display: flex;
 	flex-wrap: wrap;
 	font-family: arial;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 /*.experience-listing:nth-of-type(1) {
@@ -102,18 +154,167 @@ body {
 	width: 30%;
 }*/
 
-img {
+/*img {
 	height: 50px;
-}
+}*/
 
-.experience-listing {
+/*.experience-listing {
 	box-sizing: border-box;
-	padding: 7%;
+	padding: 3%;
 	text-align: center;
-	width: 33%;
-}
+	width: 20%;
+	font-size: 75%;
+}*/
 
 .studii, {
 	color: white;
 }
 
+.close-about {
+	margin-top: 2%;
+}
+
+.experience {
+	margin-top: 7%;
+	height: 200px;
+}
+
+.biology-wrapper {
+	position: absolute;
+	left: 10%;
+}
+.biology {
+	height: 0px;
+	width: 0px;
+	border-bottom: solid #857a83 110px;
+	border-left: solid transparent 110px;
+	border-right: solid transparent 130px;
+
+}
+
+.biology-text {
+	position: relative;
+	bottom: 80px;
+	/*left: 60px;*/
+	text-align: center;
+	right: 20px;
+}
+
+.cake-wrapper {
+	position: absolute;
+	left: 20%;
+}
+.cake {
+	height: 0px;
+	width: 0px;
+	border-bottom: solid #5EBEB3 150px;
+	border-left: solid transparent 110px;
+	border-right: solid transparent 110px;
+}
+
+.cake-text {
+	position: relative;
+	bottom: 80px;
+	text-align: center;
+	right: 20px;
+}
+
+.wdi-wrapper {
+	position: absolute;
+	left: 40%;
+}
+.wdi {
+	height: 0px;
+	width: 0px;
+	border-bottom: solid #6EE4D3 150px;
+	border-left: solid transparent 180px;
+	border-right: solid transparent 150px;
+}
+
+.wdi-text {
+	position: relative;
+	bottom: 80px;
+	text-align: center;
+}
+.forensics-wrapper {
+	position: absolute;
+	left: 70%;
+}
+.forensics {
+	height: 0px;
+	width: 0px;
+	border-bottom: solid #B9F2D2 120px;
+	border-left: solid transparent 135px;
+	border-right: solid transparent 120px;
+}
+
+.forensics-text {
+	position: relative;
+	bottom: 80px;
+	text-align: center;
+}
+.improv-wrapper {
+	position: absolute;
+	left: 60%;
+}
+.improv {
+	height: 0px;
+	width: 0px;
+	border-bottom: solid #F1E7DE 180px;
+	border-left: solid transparent 110px;
+	border-right: solid transparent 110px;
+}
+
+.improv-text {
+	position: relative;
+	bottom: 80px;
+	text-align: center;
+}
+.dna-wrapper {
+	position: absolute;
+	left: 30%;
+}
+.dna {
+	height: 0px;
+	width: 0px;
+	border-bottom: solid #57DED1 110px;
+	border-left: solid transparent 110px;
+	border-right: solid transparent 110px;
+}
+
+.dna-text {
+	position: relative;
+	bottom: 80px;
+	text-align: center;
+}
+
+/*.wdi {
+	height: 0px;
+	width: 0px;
+	border-bottom: solid purple 150px;
+	border-left: solid transparent 150px;
+	border-right: solid transparent 150px;
+}*/
+
+.wdi-text {
+	position: relative;
+	bottom: 80px;
+	text-align: center;
+}
+
+.image-and-links, .blurb {
+	box-sizing: border-box;
+	padding: 5%;
+/*	background-color: pink;*/
+	height: 50%;
+	width: 50%;
+}
+.project-image img {
+	background-color: yellow;
+	height: 100%;
+	width: 100%;
+}
+
+.project-info {
+	display: flex;
+}
