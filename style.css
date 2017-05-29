@@ -76,14 +76,18 @@ body {
 }
 
 .projects {
-	color: red;
+/*	color: red;*/
 	background-color: black;
 	position: relative;
 	height: 180px;
 	width: 32px;
 	top: 40px;
-
 	margin: 0 15px;
+}
+
+.close-projects {
+	color: white;
+	text-align: right;
 }
 
 .about {
@@ -296,4 +300,21 @@ body {
 	position: relative;
 	bottom: 80px;
 	text-align: center;
+}
+
+.image-and-links, .blurb {
+	box-sizing: border-box;
+	padding: 5%;
+/*	background-color: pink;*/
+	height: 50%;
+	width: 50%;
+}
+.project-image img {
+	background-color: yellow;
+	height: 100%;
+	width: 100%;
+}
+
+.project-info {
+	display: flex;
 }

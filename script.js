@@ -20,11 +20,11 @@ var aboutListing = $(".about-listing");
 //var experience = $(".experience");
 var blurb = $(".blurb");
 var studii = $(".studii");
-var studiiBlurb = $(".studii-blurb")
+var studiiProject = $(".studii-project")
 var endangered = $(".endangered");
-var endangeredBlurb = $(".endangered-blurb");
+var endangeredProject = $(".endangered-project");
 var simon = $(".simon");
-var simonBlurb = $(".simon-blurb");
+var simonProject = $(".simon-project");
 var final= $(".final");
 
 var nameLetter = $(".name-letter")
@@ -35,7 +35,8 @@ var projectsClicked = false;
 aboutWrapper.hide();
 closeAbout.hide();
 projectsWrapper.hide();
-blurb.hide();
+endangeredProject.hide();
+simonProject.hide();
 
 
 aboutButton.click(function(){
@@ -88,24 +89,34 @@ closeAbout.click(function(){
 });
 
 
-projectsButton.click(
-function() {
+projectsButton.click(function() {
 	if (projectsClicked === false){
 
-	projects.animate({
-		height: "90vh",
-		width: "540px",
-		top: "-=310px"
-	}, 2000)
-	projectsWrapper.show();
+		projects.animate({
+			height: "80vh",
+			width: "80%",
+			top: "-=250px"
+		}, 2000)
 
-	// studiiBlurb.show();
-	projectListing.show();
-	projectsNav.show();
-	
-	projectsClicked = true;
-	aboutButton.hide();
-	contactButton.hide();
+		projectsWrapper.show();
+		studiiProject.show();
+		studii.css("color", "white");
+		projectListing.show();
+		projectsNav.show();
+	//closeProjects.show();
+
+		nameLetter.animate({
+			"font-size": "0"
+		}, 2000)
+
+		about.animate({
+			height: "0",
+			width: "0",
+			top: "-=40px",
+		}, 2000);
+		projectsClicked = true;
+	//aboutButton.hide();
+	//contactButton.hide();
 
 }
 });
@@ -118,36 +129,50 @@ closeProjects.click(function(){
 	}, 2000)
 	projectsWrapper.hide();
 	
+	nameLetter.animate({
+		"font-size": "1500%"
+	}, 2000)
+
+	about.animate({
+		height: "83px",
+		width: "54px",
+		top: "+=40px"
+	}, 2000)
+
+	endangered.css("color", "gray");
+	simon.css("color", "gray");
+	endangeredProject.hide();
+	simonProject.hide();
 	projectsClicked = false;
-	aboutButton.show();
-	contactButton.show();
+	//aboutButton.show();
+	//contactButton.show();
 });
 
 studii.on("click", function(){
 	studii.css("color", "white");
 	endangered.css("color", "gray");
 	simon.css("color", "gray");
-	endangeredBlurb.hide();
-	simonBlurb.hide();
-	studiiBlurb.show();
+	endangeredProject.hide();
+	simonProject.hide();
+	studiiProject.show();
 });
 
 endangered.on("click", function(){
 	endangered.css("color", "white");
 	studii.css("color", "gray");
 	simon.css("color", "gray");
-	studiiBlurb.hide();
-	simonBlurb.hide();
-	endangeredBlurb.show();
+	studiiProject.hide();
+	simonProject.hide();
+	endangeredProject.show();
 })
 
 simon.on("click", function(){
 	simon.css("color", "white");
 	studii.css("color", "gray");
 	endangered.css("color", "gray");
-	studiiBlurb.hide();
-	endangeredBlurb.hide();
-	simonBlurb.show();
+	studiiProject.hide();
+	endangeredProject.hide();
+	simonProject.show();
 })
 
 
