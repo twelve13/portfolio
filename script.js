@@ -1,24 +1,20 @@
-//var nav = $(".nav");
-var aboutOuter = $(".about-outer");
-var aboutViewer = $(".about-viewer");
 var aboutButton = $(".about-button");
-var about = $(".about");
-var aboutWrapper = $(".about-wrapper");
-var aboutClose = $(".about-close");
-
 var projectsButton = $(".projects-button");
+var contactButton = $(".contact-button");
+
+var aboutOuter = $(".about-outer");
+var about = $(".about");
+var aboutClose = $(".about-close");
+var aboutWrapper = $(".about-wrapper");
+var aboutListing = $(".about-listing");
+var aboutViewer = $(".about-viewer");
+
 var projects = $(".projects");
+var projectsClose = $(".projects-close");
 var projectsWrapper = $(".projects-wrapper");
 var projectsNav = $(".projects-nav");
 var projectListing = $("project-listing");
-var closeProjects = $(".close-projects");
 
-var contactButton = $(".contact-button");
-
-
-
-var aboutListing = $(".about-listing");
-//var experience = $(".experience");
 var blurb = $(".blurb");
 var studii = $(".studii");
 var studiiProject = $(".studii-project")
@@ -28,19 +24,18 @@ var simon = $(".simon");
 var simonProject = $(".simon-project");
 var final= $(".final");
 
-var nameLetter = $(".name-letter")
-
 var aboutClicked = false;
 var projectsClicked = false;
 
 aboutWrapper.hide();
 aboutClose.hide();
+aboutViewer.hide();
 projectsWrapper.hide();
 endangeredProject.hide();
 simonProject.hide();
-aboutViewer.hide();
 
-var expand = function() {
+
+var aboutExpand = function() {
 	aboutViewer.show();
 	$("body").animate({
 		scrollTop: $(document).height() - $(window).height()
@@ -62,7 +57,7 @@ var expand = function() {
 };
 
 
-var shrink = function(){
+var aboutShrink = function(){
 
 	about.animate({
 		height: "83px",
@@ -87,12 +82,12 @@ var shrink = function(){
 
 aboutButton.click(function(){
 	if (aboutClicked === false){
-		expand();
+		aboutExpand();
 	}
 });
 
 aboutClose.click(function(){
-	shrink();
+	aboutShrink();
 });
 
 
@@ -113,11 +108,8 @@ projectsButton.click(function() {
 		studii.css("color", "white");
 		projectListing.show();
 		projectsNav.show();
-	//closeProjects.show();
 
-		nameLetter.animate({
-			"font-size": "0"
-		}, 2000)
+
 
 		about.animate({
 			height: "0",
@@ -125,13 +117,12 @@ projectsButton.click(function() {
 			top: "-=40px",
 		}, 2000);
 		projectsClicked = true;
-	//aboutButton.hide();
-	//contactButton.hide();
+
 
 }
 });
 
-closeProjects.click(function(){
+projectsClose.click(function(){
 		projects.animate({
 		height: "180px",
 		width: "32px",
@@ -139,9 +130,6 @@ closeProjects.click(function(){
 	}, 2000)
 	projectsWrapper.hide();
 	
-	nameLetter.animate({
-		"font-size": "1500%"
-	}, 2000)
 
 	about.animate({
 		height: "83px",
@@ -154,8 +142,7 @@ closeProjects.click(function(){
 	endangeredProject.hide();
 	simonProject.hide();
 	projectsClicked = false;
-	//aboutButton.show();
-	//contactButton.show();
+
 });
 
 studii.on("click", function(){
