@@ -3,6 +3,12 @@
 	margin: 0;
 }
 
+.projects-viewer {
+	background-color: green;
+	height: 100vh;
+	width: 100%;
+}
+
 .main {
 	align-content: center;
 	display: flex;
@@ -175,15 +181,10 @@
 	right: 20px;
 }
 
-.project-info {
-	display: flex;
-}
-
-.image-and-links, .blurb {
-	box-sizing: border-box;
-	height: 50%;
-	padding: 5%;
-	width: 50%;
+.projects-outer {
+	height: 300px;
+	position: relative;
+	width: 120px;
 }
 
 .projects {
@@ -204,6 +205,17 @@
 	color: gray;
 	display: flex;
 	font-size: 200%;
+}
+
+.project-info {
+	display: flex;
+}
+
+.image-and-links, .blurb {
+	box-sizing: border-box;
+	height: 50%;
+	padding: 5%;
+	width: 50%;
 }
 
 .studii, {
