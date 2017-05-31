@@ -4,12 +4,7 @@
 }
 
 body {
-	align-content: center;
-	display: flex;
-	flex-wrap: wrap;
-	height: 100vh;
-	justify-content: center;
-	width: 100%;
+
 }
 
 .nav {
@@ -57,9 +52,11 @@ body {
 }
 
 .name-letter {
+	background-color: purple;
 	font-size: 1500%;
 	position: relative;
-	z-index: -1;
+	height: 100%;
+/*	z-index: -1;*/
 }
 
 
@@ -91,19 +88,20 @@ body {
 }
 
 .about {
+	background-color: green;
 	border: black solid 29px;
 	border-radius: 40%;
 	height: 83px;
 	width: 54px;
-	position: relative;
+	position: absolute;
 	top: 82px;
-	background-color: white;
+/*	background-color: white;*/
 	display: flex;
 	justify-content: center;
 	align-items: space-around;
 	flex-wrap: wrap;
 /*	z-index: 5;*/
-	overflow: scroll;
+	overflow: hidden;
 	/*overflow-wrap: break-word;*/
 
 
@@ -317,4 +315,27 @@ body {
 
 .project-info {
 	display: flex;
+}
+
+.main {
+	background-color: orange;
+	height: 100vh;
+	width: 100%;
+	align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.about-main {
+	background-color: yellow;
+	height: 100vh;
+	width: 100%;
+}
+
+.about-outer {
+	background-color: blue;
+	position: relative;
+	height: 300px;
+	width: 120px;
 }

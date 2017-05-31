@@ -1,5 +1,5 @@
 //var nav = $(".nav");
-
+var aboutOuter = $(".about-outer");
 var aboutButton = $(".about-button");
 var about = $(".about");
 var aboutWrapper = $(".about-wrapper");
@@ -42,24 +42,32 @@ simonProject.hide();
 aboutButton.click(function(){
 	if (aboutClicked === false){
 
+		aboutOuter.animate({
+			// height: "80vh",
+			// width: "80%",
+			top: "+=60vh",
+		// 	scrollTop: $(document).height()-$(window).height()
+		}, 3000)
+
 		about.animate({
 			height: "80vh",
-			width: "80%",
-			top: "-=310px",
-		}, 2000)
+			width: "900px",
+			right: "-450px"
+
+		}, 3000,)
 	
 		aboutWrapper.show();
 		closeAbout.show();
 		
-		nameLetter.animate({
-			"font-size": "0"
-		}, 2000)
+		// nameLetter.animate({
+		// 	"font-size": "0"
+		// }, 2000)
 
-		projects.animate({
-			height: "0",
-			width: "0",
-			top: "-=40px"
-		}, 2000);
+		// projects.animate({
+		// 	height: "0",
+		// 	width: "0",
+		// 	top: "-=40px"
+		// }, 2000);
 
 		aboutClicked = true;
 	}
