@@ -1,5 +1,6 @@
 //var nav = $(".nav");
 var aboutOuter = $(".about-outer");
+var aboutMain = $(".about-main");
 var aboutButton = $(".about-button");
 var about = $(".about");
 var aboutWrapper = $(".about-wrapper");
@@ -14,7 +15,7 @@ var closeProjects = $(".close-projects");
 
 var contactButton = $(".contact-button");
 
-//var title = $(".title");
+
 
 var aboutListing = $(".about-listing");
 //var experience = $(".experience");
@@ -37,66 +38,65 @@ closeAbout.hide();
 projectsWrapper.hide();
 endangeredProject.hide();
 simonProject.hide();
+aboutMain.hide();
+
+var expand = function() {
+	aboutMain.show();
+	$("body").animate({
+		scrollTop: $(document).height() - $(window).height()
+	}, 1000)
+
+	aboutOuter.animate({
+		top: "+=60vh",
+	}, 1000)
+
+	about.animate({
+		height: "80vh",
+		width: "900px",
+		right: "-450px"
+	}, 1000,)
+	
+	aboutWrapper.show();
+	closeAbout.show();
+	aboutClicked = true;
+};
+
+
+var shrink = function(){
+
+	about.animate({
+		height: "83px",
+		width: "54px",
+		right: "0px"
+	}, 700)
+
+	$("body").animate({
+		scrollTop: -$(window).height()
+	}, 1000)
+
+	aboutOuter.animate({
+		top: "-=60vh",
+	}, 1000)
+
+	aboutWrapper.hide();
+	closeAbout.hide();
+	aboutMain.hide(3000)
+	aboutClicked = false;	
+};
 
 
 aboutButton.click(function(){
 	if (aboutClicked === false){
-		$("body").animate({
-			scrollTop: $(document).height() - $(window).height()
-		}, 1000)
-
-		aboutOuter.animate({
-			top: "+=60vh",
-		}, 1000)
-
-		about.animate({
-			height: "80vh",
-			width: "900px",
-			right: "-450px"
-
-		}, 1000,)
-	
-		aboutWrapper.show();
-		closeAbout.show();
-		
-		aboutClicked = true;
+		expand();
 	}
 });
 
 closeAbout.click(function(){
-		about.animate({
-		height: "83px",
-		width: "54px",
-		right: "0px"
-		// top: "82px"
-		}, 2000)
-
-
-		$("body").animate({
-			scrollTop: -$(window).height()
-		}, 1000)
-
-		aboutOuter.animate({
-			top: "-=60vh",
-		}, 1000)
-
-
-
-	aboutWrapper.hide();
-	closeAbout.hide();
-
-	// nameLetter.animate({
-	// 	"font-size": "1500%"
-	// }, 2000)
-
-	// projects.animate({
-	// 	height: "180px",
-	// 	width: "32px",
-	// 	top: "+=40px"
-	// }, 2000)
-
-	aboutClicked = false;	
+	shrink();
 });
+
+
+
 
 
 projectsButton.click(function() {
