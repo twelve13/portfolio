@@ -3,8 +3,13 @@
 	margin: 0;
 }
 
-body {
-
+.main {
+	align-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	justify-content: center;
+	width: 100%;
 }
 
 .nav {
@@ -12,13 +17,13 @@ body {
 	font-family: 'Permanent Marker', cursive;
 	font-size: 200%;
 	justify-content: flex-start;
-	width: 70%;
+	width: 80%;
 }
 
 .nav div {
 	background-color: black;
-	color: white;
 	border-radius: 25%;
+	color: white;
 	margin: 0 2% 10% 2%;
 	padding: 5px;
 	text-align: center;
@@ -30,81 +35,37 @@ body {
 	font-family: 'Viga', sans-serif;
 	height: 40%;
 	justify-content: center;
-/*	padding-top: 10%;*/
 	width: 100%;
 }
 
-/*.last-name {
-	font-family: 'Viga', sans-serif;
-	font-size: 400%;
-}*/
-.name1, .name2 {display:flex}
-.title-wrapper {
-	display:flex;
-	justify-content: flex-end;
-	width: 60%;
-}
-
-
-.title {
-	font-family: 'Permanent Marker', cursive;
-	font-size: 300%;
-}
-
 .name-letter {
-	/*background-color: purple;*/
 	font-size: 1500%;
-	position: relative;
 	height: 100%;
-/*	z-index: -1;*/
-}
-
-
-.projects-nav * {
-	display: flex;
-	font-size: 200%;
-	color: gray;
-}
-
-.blurb {
-	font-size: 200%;
-	padding-top: 20%;
-	color: white;
-}
-
-.projects {
-/*	color: red;*/
-	background-color: black;
 	position: relative;
-	height: 180px;
-	width: 32px;
-	top: 40px;
-	margin: 0 15px;
 }
 
-.close-projects {
-	color: white;
-	text-align: right;
+.about-outer {
+	height: 300px;
+	position: relative;
+	width: 120px;
 }
 
 .about {
-	/*background-color: green;*/
+	align-items: space-around;
 	border: black solid 29px;
 	border-radius: 40%;
+	display: flex;
+	flex-wrap: wrap;
 	height: 83px;
-	width: 54px;
+	justify-content: center;
+	overflow: hidden;
 	position: absolute;
 	top: 82px;
-/*	background-color: white;*/
-	display: flex;
-	justify-content: center;
-	align-items: space-around;
-	flex-wrap: wrap;
-/*	z-index: 5;*/
-	overflow: hidden;
-	/*overflow-wrap: break-word;*/
+	width: 54px;
+}
 
-
+.about-close {
+	margin-top: 2%;
 }
 
 .about-listing {
@@ -121,221 +82,153 @@ body {
 }
 
 .about-listing:nth-of-type(2) {
-
-	padding-left: 8%;
-	padding-right: 8%;
-
+	padding-left: 6%;
+	padding-right: 6%;
 }
 
-/*.about-listing:nth-of-type(3) {
-	padding-left: 7%;
-	padding-right: 7%;
-}*/
-
 .experience {
+	align-items: flex-end;
 	display: flex;
 	flex-wrap: wrap;
 	font-family: arial;
-	justify-content: center;
-	align-items: flex-end;
-}
-
-/*.experience-listing:nth-of-type(1) {
-	box-sizing: border-box;
-	padding: 7%;
-	width: 30%;
-}
-
-.experience-listing:nth-of-type(2) {
-	box-sizing: border-box;
-	padding: 7%;
-	width: 30%;
-}*/
-
-/*img {
-	height: 50px;
-}*/
-
-/*.experience-listing {
-	box-sizing: border-box;
-	padding: 3%;
-	text-align: center;
-	width: 20%;
-	font-size: 75%;
-}*/
-
-.studii, {
-	color: white;
-}
-
-.close-about {
-	margin-top: 2%;
-}
-
-.experience {
-	margin-top: 7%;
 	height: 200px;
+	justify-content: center;
+	margin-top: 7%;
+}
+
+.biology-wrapper, .cake-wrapper, .wdi-wrapper, .forensics-wrapper, .improv-wrapper, .dna-wrapper {
+	position: absolute;
 }
 
 .biology-wrapper {
-	position: absolute;
 	left: 10%;
-}
-.biology {
-	height: 0px;
-	width: 0px;
-	border-bottom: solid #857a83 110px;
-	border-left: solid transparent 110px;
-	border-right: solid transparent 130px;
-
-}
-
-.biology-text {
-	position: relative;
-	bottom: 80px;
-	/*left: 60px;*/
-	text-align: center;
-	right: 20px;
 }
 
 .cake-wrapper {
-	position: absolute;
 	left: 20%;
 }
-.cake {
+
+.wdi-wrapper {
+	left: 40%;
+}
+
+.forensics-wrapper {
+	left: 70%;
+}
+
+.improv-wrapper {
+	left: 60%;
+}
+
+.dna-wrapper {
+	left: 30%;
+}
+
+.biology, .cake, .wdi, .forensics, .improv, .dna {
 	height: 0px;
 	width: 0px;
+}
+
+.biology {
+	border-bottom: solid #857a83 110px;
+	border-left: solid transparent 110px;
+	border-right: solid transparent 130px;
+}
+
+.cake {
 	border-bottom: solid #5EBEB3 150px;
 	border-left: solid transparent 110px;
 	border-right: solid transparent 110px;
 }
 
-.cake-text {
-	position: relative;
-	bottom: 80px;
-	text-align: center;
-	right: 20px;
-}
-
-.wdi-wrapper {
-	position: absolute;
-	left: 40%;
-}
 .wdi {
-	height: 0px;
-	width: 0px;
 	border-bottom: solid #6EE4D3 150px;
 	border-left: solid transparent 180px;
 	border-right: solid transparent 150px;
 }
 
-.wdi-text {
-	position: relative;
-	bottom: 80px;
-	text-align: center;
-}
-.forensics-wrapper {
-	position: absolute;
-	left: 70%;
-}
 .forensics {
-	height: 0px;
-	width: 0px;
 	border-bottom: solid #B9F2D2 120px;
 	border-left: solid transparent 135px;
 	border-right: solid transparent 120px;
 }
 
-.forensics-text {
-	position: relative;
-	bottom: 80px;
-	text-align: center;
-}
-.improv-wrapper {
-	position: absolute;
-	left: 60%;
-}
 .improv {
-	height: 0px;
-	width: 0px;
 	border-bottom: solid #F1E7DE 180px;
 	border-left: solid transparent 110px;
 	border-right: solid transparent 110px;
 }
 
-.improv-text {
-	position: relative;
-	bottom: 80px;
-	text-align: center;
-}
-.dna-wrapper {
-	position: absolute;
-	left: 30%;
-}
 .dna {
-	height: 0px;
-	width: 0px;
 	border-bottom: solid #57DED1 110px;
 	border-left: solid transparent 110px;
 	border-right: solid transparent 110px;
 }
 
-.dna-text {
-	position: relative;
+.biology-text, .cake-text, .wdi-text, .forensics-text, .improv-text, .dna-text {
 	bottom: 80px;
+	position: relative;
 	text-align: center;
 }
 
-/*.wdi {
-	height: 0px;
-	width: 0px;
-	border-bottom: solid purple 150px;
-	border-left: solid transparent 150px;
-	border-right: solid transparent 150px;
-}*/
-
-.wdi-text {
-	position: relative;
-	bottom: 80px;
-	text-align: center;
-}
-
-.image-and-links, .blurb {
-	box-sizing: border-box;
-	padding: 5%;
-/*	background-color: pink;*/
-	height: 50%;
-	width: 50%;
-}
-.project-image img {
-/*	background-color: yellow;*/
-	height: 100%;
-	width: 100%;
+.biology-text, .cake-text {
+	right: 20px;
 }
 
 .project-info {
 	display: flex;
 }
 
-.main {
-/*	background-color: orange;*/
-	height: 100vh;
-	width: 100%;
-	align-content: center;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
-}
-.about-main {
-/*	background-color: yellow;*/
-	height: 100vh;
-	width: 100%;
+.image-and-links, .blurb {
+	box-sizing: border-box;
+	height: 50%;
+	padding: 5%;
+	width: 50%;
 }
 
-.about-outer {
-/*	background-color: blue;*/
+.projects {
+	background-color: black;
+	height: 180px;
+	margin: 0 15px;
 	position: relative;
-	height: 300px;
-	width: 120px;
+	top: 40px;
+	width: 32px;
+}
+
+.close-projects {
+	color: white;
+	text-align: right;
+}
+
+.projects-nav * {
+	color: gray;
+	display: flex;
+	font-size: 200%;
+}
+
+.studii, {
+	color: white;
+}
+
+.project-image img {
+	height: 100%;
+	width: 100%;
+}
+
+.blurb {
+	color: white;
+	font-size: 200%;
+}
+
+.title-wrapper {
+	display: flex;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 300%;
+	justify-content: flex-end;
+	width: 80%;
+}
+
+.about-viewer {
+	height: 100vh;
+	width: 100%;
 }

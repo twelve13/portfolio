@@ -1,10 +1,10 @@
 //var nav = $(".nav");
 var aboutOuter = $(".about-outer");
-var aboutMain = $(".about-main");
+var aboutViewer = $(".about-viewer");
 var aboutButton = $(".about-button");
 var about = $(".about");
 var aboutWrapper = $(".about-wrapper");
-var closeAbout = $(".close-about");
+var aboutClose = $(".about-close");
 
 var projectsButton = $(".projects-button");
 var projects = $(".projects");
@@ -34,14 +34,14 @@ var aboutClicked = false;
 var projectsClicked = false;
 
 aboutWrapper.hide();
-closeAbout.hide();
+aboutClose.hide();
 projectsWrapper.hide();
 endangeredProject.hide();
 simonProject.hide();
-aboutMain.hide();
+aboutViewer.hide();
 
 var expand = function() {
-	aboutMain.show();
+	aboutViewer.show();
 	$("body").animate({
 		scrollTop: $(document).height() - $(window).height()
 	}, 1000)
@@ -57,7 +57,7 @@ var expand = function() {
 	}, 1000,)
 	
 	aboutWrapper.show();
-	closeAbout.show();
+	aboutClose.show();
 	aboutClicked = true;
 };
 
@@ -79,7 +79,7 @@ var shrink = function(){
 	}, 1000)
 
 	aboutWrapper.hide();
-	closeAbout.hide();
+	aboutClose.hide();
 	aboutMain.hide(3000)
 	aboutClicked = false;	
 };
@@ -91,7 +91,7 @@ aboutButton.click(function(){
 	}
 });
 
-closeAbout.click(function(){
+aboutClose.click(function(){
 	shrink();
 });
 
