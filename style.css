@@ -52,7 +52,7 @@ body {
 }
 
 .name-letter {
-	background-color: purple;
+	/*background-color: purple;*/
 	font-size: 1500%;
 	position: relative;
 	height: 100%;
@@ -88,7 +88,7 @@ body {
 }
 
 .about {
-	background-color: green;
+	/*background-color: green;*/
 	border: black solid 29px;
 	border-radius: 40%;
 	height: 83px;
@@ -308,7 +308,7 @@ body {
 	width: 50%;
 }
 .project-image img {
-	background-color: yellow;
+/*	background-color: yellow;*/
 	height: 100%;
 	width: 100%;
 }
@@ -318,7 +318,7 @@ body {
 }
 
 .main {
-	background-color: orange;
+/*	background-color: orange;*/
 	height: 100vh;
 	width: 100%;
 	align-content: center;
@@ -328,13 +328,13 @@ body {
 
 }
 .about-main {
-	background-color: yellow;
+/*	background-color: yellow;*/
 	height: 100vh;
 	width: 100%;
 }
 
 .about-outer {
-	background-color: blue;
+/*	background-color: blue;*/
 	position: relative;
 	height: 300px;
 	width: 120px;

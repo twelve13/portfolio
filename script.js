@@ -41,34 +41,24 @@ simonProject.hide();
 
 aboutButton.click(function(){
 	if (aboutClicked === false){
+		$("body").animate({
+			scrollTop: $(document).height() - $(window).height()
+		}, 1000)
 
 		aboutOuter.animate({
-			// height: "80vh",
-			// width: "80%",
 			top: "+=60vh",
-		// 	scrollTop: $(document).height()-$(window).height()
-		}, 3000)
+		}, 1000)
 
 		about.animate({
 			height: "80vh",
 			width: "900px",
 			right: "-450px"
 
-		}, 3000,)
+		}, 1000,)
 	
 		aboutWrapper.show();
 		closeAbout.show();
 		
-		// nameLetter.animate({
-		// 	"font-size": "0"
-		// }, 2000)
-
-		// projects.animate({
-		// 	height: "0",
-		// 	width: "0",
-		// 	top: "-=40px"
-		// }, 2000);
-
 		aboutClicked = true;
 	}
 });
@@ -77,21 +67,33 @@ closeAbout.click(function(){
 		about.animate({
 		height: "83px",
 		width: "54px",
-		top: "82px"
-	}, 2000)
+		right: "0px"
+		// top: "82px"
+		}, 2000)
+
+
+		$("body").animate({
+			scrollTop: -$(window).height()
+		}, 1000)
+
+		aboutOuter.animate({
+			top: "-=60vh",
+		}, 1000)
+
+
 
 	aboutWrapper.hide();
 	closeAbout.hide();
 
-	nameLetter.animate({
-		"font-size": "1500%"
-	}, 2000)
+	// nameLetter.animate({
+	// 	"font-size": "1500%"
+	// }, 2000)
 
-	projects.animate({
-		height: "180px",
-		width: "32px",
-		top: "+=40px"
-	}, 2000)
+	// projects.animate({
+	// 	height: "180px",
+	// 	width: "32px",
+	// 	top: "+=40px"
+	// }, 2000)
 
 	aboutClicked = false;	
 });
