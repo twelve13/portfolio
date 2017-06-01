@@ -40,6 +40,7 @@ projectsViewer.hide();
 
 var aboutExpand = function() {
 	aboutViewer.show();
+
 	$("body").animate({
 		scrollTop: $(document).height() - $(window).height()
 	}, 1000)
@@ -77,7 +78,7 @@ var aboutShrink = function(){
 
 	aboutWrapper.hide();
 	aboutClose.hide();
-	aboutViewer.hide(3000)
+	aboutViewer.hide(2000)
 	aboutClicked = false;	
 };
 
@@ -118,14 +119,14 @@ var projectsShrink = function(){
 
 	$("body").animate({
 	scrollTop: $(document).height()
-	}, 1000)
+	}, 1500)
 
 	projectsOuter.animate({
 		top: "+=130vh",
 	}, 1000)
 
 	projectsWrapper.hide();
-
+	projectsViewer.hide(2000)
 	endangered.css("color", "gray");
 	simon.css("color", "gray");
 	endangeredProject.hide();

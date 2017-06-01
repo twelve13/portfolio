@@ -3,8 +3,11 @@
 	margin: 0;
 }
 
+a {
+	color: white;
+}
+
 .projects-viewer {
-	background-color: green;
 	height: 100vh;
 	width: 100%;
 }
@@ -198,6 +201,7 @@
 
 .projects-close {
 	color: white;
+	padding: 2% 2% 0 0;
 	text-align: right;
 }
 
@@ -225,6 +229,14 @@
 .project-image img {
 	height: 100%;
 	width: 100%;
+}
+
+.project-links {
+	color: white;
+	display: flex;
+	font-size: 150%;
+	justify-content: space-around;
+	padding-top: 5%;
 }
 
 .blurb {
