@@ -17,6 +17,12 @@ var projectsNav = $(".projects-nav");
 var projectListing = $("project-listing");
 var projectsViewer = $(".projects-viewer");
 
+var contactLink = $(".contact-link");
+var email = $(".email");
+var resume = $(".resume");
+var linkedin = $(".linkedin");
+var github = $(".github");
+
 var blurb = $(".blurb");
 var studii = $(".studii");
 var studiiProject = $(".studii-project")
@@ -28,6 +34,7 @@ var final= $(".final");
 
 var aboutClicked = false;
 var projectsClicked = false;
+var contactClicked = false;
 
 aboutWrapper.hide();
 aboutClose.hide();
@@ -36,6 +43,7 @@ projectsWrapper.hide();
 endangeredProject.hide();
 simonProject.hide();
 projectsViewer.hide();
+contactLink.hide();
 
 
 var aboutExpand = function() {
@@ -152,6 +160,27 @@ projectsButton.click(function() {
 
 projectsClose.click(function(){
 	projectsShrink();
+});
+
+contactButton.click(function(){
+	if (contactClicked === false){
+		email.animate({
+		top: "-=36vh",
+		}, 1000)
+		resume.animate({
+		top: "-=27vh",
+		}, 1000)
+		contactClicked = true
+		linkedin.animate({
+		top: "-=18vh",
+		}, 1000)
+		github.animate({
+		top: "-=9vh",
+		}, 1000)
+		contactLink.show(2000);
+
+		contactClicked = true
+	}
 });
 
 
