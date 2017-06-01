@@ -61,7 +61,6 @@ var aboutExpand = function() {
 
 
 var aboutShrink = function(){
-
 	about.animate({
 		height: "83px",
 		width: "54px",
@@ -78,10 +77,61 @@ var aboutShrink = function(){
 
 	aboutWrapper.hide();
 	aboutClose.hide();
-	aboutMain.hide(3000)
+	aboutViewer.hide(3000)
 	aboutClicked = false;	
 };
 
+
+var projectsExpand = function() {
+	projectsViewer.show(1000);
+	
+	$("body").animate({
+		scrollTop: -$(document).height()
+	}, 1000)
+
+	projects.animate({
+		height: "80vh",
+		width: "900px",
+		right: "500px"
+	}, 1000,)
+	
+	projectsOuter.animate({
+		top: "-=130vh",
+	}, 1000)
+
+	projectsWrapper.show();
+	studiiProject.show();
+	studii.css("color", "white");
+	projectListing.show();
+	projectsNav.show();
+	projectsClicked = true;
+};
+
+var projectsShrink = function(){
+
+	projects.animate({
+		height: "180px",
+		width: "32px",
+		right: "0px",
+	
+	}, 700)
+
+	$("body").animate({
+	scrollTop: $(document).height()
+	}, 1000)
+
+	projectsOuter.animate({
+		top: "+=130vh",
+	}, 1000)
+
+	projectsWrapper.hide();
+
+	endangered.css("color", "gray");
+	simon.css("color", "gray");
+	endangeredProject.hide();
+	simonProject.hide();
+	projectsClicked = false;	
+};
 
 aboutButton.click(function(){
 	if (aboutClicked === false){
@@ -93,36 +143,6 @@ aboutClose.click(function(){
 	aboutShrink();
 });
 
-
-
-
-
-var projectsExpand = function() {
-	projectsViewer.show(2000);
-	
-	$("body").animate({
-		scrollTop: -$(document).height()
-	}, 1000)
-
-	projectsOuter.animate({
-		top: "-=130vh",
-	}, 2000)
-
-	projects.animate({
-		height: "80vh",
-		width: "900px",
-		right: "450px"
-	}, 2000,)
-	
-	projectsWrapper.show();
-	studiiProject.show();
-	studii.css("color", "white");
-	projectListing.show();
-	projectsNav.show();
-	projectsClicked = true;
-};
-
-
 projectsButton.click(function() {
 	if (projectsClicked === false){
 		projectsExpand();
@@ -130,27 +150,9 @@ projectsButton.click(function() {
 });
 
 projectsClose.click(function(){
-		projects.animate({
-		height: "180px",
-		width: "32px",
-		top: "40px"
-	}, 2000)
-	projectsWrapper.hide();
-	
-
-	about.animate({
-		height: "83px",
-		width: "54px",
-		top: "+=40px"
-	}, 2000)
-
-	endangered.css("color", "gray");
-	simon.css("color", "gray");
-	endangeredProject.hide();
-	simonProject.hide();
-	projectsClicked = false;
-
+	projectsShrink();
 });
+
 
 studii.on("click", function(){
 	studii.css("color", "white");
