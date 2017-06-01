@@ -13,7 +13,7 @@ a {
 }
 
 .main {
-	align-content: center;
+	align-content: flex-start;
 	display: flex;
 	flex-wrap: wrap;
 	height: 100vh;
@@ -21,25 +21,64 @@ a {
 	width: 100%;
 }
 
+.nav-and-contact-viewer {
+/*	background-color: yellow;*/
+	display: flex;
+	height: 35vh;
+	width: 100%;
+}
+
 .nav {
+	align-items: center;
+	/*background-color: pink;*/
 	display: flex;
 	font-family: 'Permanent Marker', cursive;
 	font-size: 200%;
-	justify-content: flex-start;
-	width: 80%;
+	justify-content: center;
+	width: 55%;
 }
 
 .nav div {
+	align-content: center;
 	background-color: black;
-	border-radius: 25%;
+	box-sizing: border-box;
+	border-radius: 18%;
 	color: white;
-	margin: 0 2% 10% 2%;
+	display: flex;
+	margin: 2%;
+	height: 60px;
+	justify-content: center;
 	padding: 5px;
-	text-align: center;
-	width: 160px;
+	width: 200px;
+}
+
+.contact-viewer {
+	width: 45%;
+}
+
+.contact-item {
+	/*background-color: red;*/
+	box-sizing: border-box;
+	display: flex;
+	height: 25%;
+	padding: 15px 50px;
+}
+
+.bulletpoint {
+	background-color: black;
+	border-radius: 12px;
+	height: 35px;
+	width: 35px;
+}
+
+.contact-link {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 200%;
+	padding-left: 5%;
 }
 
 .name {
+/*	background-color: orange;*/
 	display: flex;
 	font-family: 'Viga', sans-serif;
 	height: 40%;
@@ -256,3 +295,4 @@ a {
 	height: 100vh;
 	width: 100%;
 }
+
