@@ -329,9 +329,9 @@ span {
 }
 
 .contact-close {
-position: absolute;
-top: 22%;
-left: 42%;
+	left: 42%;
+	position: absolute;
+	top: 22%;
 }
 
 .title-wrapper {

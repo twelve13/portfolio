@@ -90,7 +90,7 @@ var aboutShrink = function(){
 
 	aboutWrapper.hide();
 	aboutClose.hide();
-	aboutViewer.hide(2000)
+	aboutViewer.hide(1000)
 	aboutClicked = false;	
 };
 
@@ -138,9 +138,10 @@ var projectsShrink = function(){
 	}, 1000)
 
 	projectsWrapper.hide();
-	projectsViewer.hide(2000)
+	projectsViewer.hide(1500)
 	endangered.css("color", "gray");
 	simon.css("color", "gray");
+	cache.css("color", "gray");
 	endangeredProject.hide();
 	simonProject.hide();
 	cacheProject.hide();
