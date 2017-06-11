@@ -180,58 +180,54 @@ span {
 	font-family: arial;
 	height: 200px;
 	justify-content: center;
-	margin-top: 7%;
+	margin-top: 2%;
 }
 
-.biology-wrapper, .cake-wrapper, .wdi-wrapper, .forensics-wrapper, .improv-wrapper, .dna-wrapper {
+.arts-wrapper, .travel-wrapper, .wdi-wrapper, .forensics-wrapper, .improv-wrapper {
 	position: absolute;
 }
 
-.biology-wrapper {
-	left: 10%;
-}
-
-.cake-wrapper {
+.arts-wrapper {
 	left: 20%;
 }
 
+.travel-wrapper {
+	left: 29%;
+}
+
 .wdi-wrapper {
-	left: 40%;
+	left: 38%;
 }
 
 .forensics-wrapper {
-	left: 70%;
-}
-
-.improv-wrapper {
 	left: 60%;
 }
 
-.dna-wrapper {
-	left: 30%;
+.improv-wrapper {
+	left: 52%;
 }
 
-.biology, .cake, .wdi, .forensics, .improv, .dna {
+.arts, .travel, .wdi, .forensics, .improv {
 	height: 0px;
 	width: 0px;
 }
 
-.biology {
+.arts {
 	border-bottom: solid #857a83 110px;
 	border-left: solid transparent 110px;
 	border-right: solid transparent 130px;
 }
 
-.cake {
+.travel {
 	border-bottom: solid #5EBEB3 150px;
 	border-left: solid transparent 110px;
 	border-right: solid transparent 110px;
 }
 
 .wdi {
-	border-bottom: solid #6EE4D3 150px;
-	border-left: solid transparent 180px;
-	border-right: solid transparent 150px;
+	border-bottom: solid #6EE4D3 130px;
+	border-left: solid transparent 160px;
+	border-right: solid transparent 130px;
 }
 
 .forensics {
@@ -242,24 +238,18 @@ span {
 
 .improv {
 	border-bottom: solid #F1E7DE 180px;
-	border-left: solid transparent 110px;
-	border-right: solid transparent 110px;
+	border-left: solid transparent 100px;
+	border-right: solid transparent 100px;
 }
 
-.dna {
-	border-bottom: solid #57DED1 110px;
-	border-left: solid transparent 110px;
-	border-right: solid transparent 110px;
-}
-
-.biology-text, .cake-text, .wdi-text, .forensics-text, .improv-text, .dna-text {
+.arts-text, .travel-text, .wdi-text, .forensics-text, .improv-text {
 	bottom: 80px;
 	position: relative;
 	text-align: center;
 }
 
-.biology-text, .cake-text {
-	right: 20px;
+.arts-text {
+	right: 10px;
 }
 
 .projects-outer {
