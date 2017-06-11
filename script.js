@@ -59,8 +59,8 @@ var aboutExpand = function() {
 
 	about.animate({
 		height: "80vh",
-		width: "900px",
-		right: "-450px"
+		width: "1000%",
+		right: "-475%"
 	}, 1000,)
 	
 	aboutWrapper.show();
