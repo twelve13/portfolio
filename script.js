@@ -22,6 +22,7 @@ var email = $(".email");
 var resume = $(".resume");
 var linkedin = $(".linkedin");
 var github = $(".github");
+var contactClose = $(".contact-close");
 
 var blurb = $(".blurb");
 var studii = $(".studii");
@@ -46,6 +47,7 @@ simonProject.hide();
 cacheProject.hide();
 projectsViewer.hide();
 contactLink.hide();
+contactClose.hide();
 
 
 var aboutExpand = function() {
@@ -145,6 +147,44 @@ var projectsShrink = function(){
 	projectsClicked = false;	
 };
 
+var contactExpand = function(){
+		email.animate({
+		top: "-=36vh",
+		}, 1000)
+		resume.animate({
+		top: "-=27vh",
+		}, 1000)
+		contactClicked = true
+		linkedin.animate({
+		top: "-=18vh",
+		}, 1000)
+		github.animate({
+		top: "-=9vh",
+		}, 1000)
+		contactLink.show(2000);
+		contactClose.show(3000);
+		contactClicked = true;
+};
+
+var contactShrink = function(){
+		email.animate({
+		top: "+=36vh",
+		}, 1000)
+		resume.animate({
+		top: "+=27vh",
+		}, 1000)
+		contactClicked = true
+		linkedin.animate({
+		top: "+=18vh",
+		}, 1000)
+		github.animate({
+		top: "+=9vh",
+		}, 1000)
+		contactLink.hide(2000);
+		contactClose.hide(2000);
+		contactClicked = false;
+};
+
 aboutButton.click(function(){
 	if (aboutClicked === false){
 		aboutExpand();
@@ -167,22 +207,13 @@ projectsClose.click(function(){
 
 contactButton.click(function(){
 	if (contactClicked === false){
-		email.animate({
-		top: "-=36vh",
-		}, 1000)
-		resume.animate({
-		top: "-=27vh",
-		}, 1000)
-		contactClicked = true
-		linkedin.animate({
-		top: "-=18vh",
-		}, 1000)
-		github.animate({
-		top: "-=9vh",
-		}, 1000)
-		contactLink.show(2000);
+		contactExpand();
+	}
+});
 
-		contactClicked = true
+contactClose.click(function(){
+	if (contactClicked === true){
+	contactShrink();
 	}
 });
 

@@ -328,6 +328,12 @@ span {
 	width: 32px;
 }
 
+.contact-close {
+position: absolute;
+top: 22%;
+left: 42%;
+}
+
 .title-wrapper {
 	display: flex;
 	font-family: 'Permanent Marker', cursive;
