@@ -30,7 +30,8 @@ var endangered = $(".endangered");
 var endangeredProject = $(".endangered-project");
 var simon = $(".simon");
 var simonProject = $(".simon-project");
-var final= $(".final");
+var cache = $(".cache");
+var cacheProject = $(".cache-project");
 
 var aboutClicked = false;
 var projectsClicked = false;
@@ -42,6 +43,7 @@ aboutViewer.hide();
 projectsWrapper.hide();
 endangeredProject.hide();
 simonProject.hide();
+cacheProject.hide();
 projectsViewer.hide();
 contactLink.hide();
 
@@ -139,6 +141,7 @@ var projectsShrink = function(){
 	simon.css("color", "gray");
 	endangeredProject.hide();
 	simonProject.hide();
+	cacheProject.hide();
 	projectsClicked = false;	
 };
 
@@ -188,25 +191,42 @@ studii.on("click", function(){
 	studii.css("color", "white");
 	endangered.css("color", "gray");
 	simon.css("color", "gray");
+	cache.css("color", "gray");
 	endangeredProject.hide();
 	simonProject.hide();
 	studiiProject.show();
+	cacheProject.hide();
 });
 
 endangered.on("click", function(){
 	endangered.css("color", "white");
 	studii.css("color", "gray");
 	simon.css("color", "gray");
+	cache.css("color", "gray");
 	studiiProject.hide();
 	simonProject.hide();
 	endangeredProject.show();
+	cacheProject.hide();
 })
 
 simon.on("click", function(){
 	simon.css("color", "white");
 	studii.css("color", "gray");
 	endangered.css("color", "gray");
+	cache.css("color", "gray");
 	studiiProject.hide();
 	endangeredProject.hide();
 	simonProject.show();
+	cacheProject.hide();
+})
+
+cache.on("click", function(){
+	cache.css("color", "white");
+	studii.css("color", "gray");
+	endangered.css("color", "gray");
+	simon.css("color", "gray")
+	studiiProject.hide();
+	endangeredProject.hide();
+	simonProject.hide();
+	cacheProject.show();
 })
