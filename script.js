@@ -40,6 +40,9 @@ var aboutClicked = false;
 var projectsClicked = false;
 var contactClicked = false;
 
+var $window = $(window);
+var width = $window.width()
+
 aboutWrapper.hide();
 aboutClose.hide();
 aboutViewer.hide();
@@ -65,8 +68,8 @@ var aboutExpand = function() {
 
 	about.animate({
 		height: "80vh",
-		width: "1000%",
-		right: "-475%"
+		width: 0.7*width,
+		right: -(0.35*width)
 	}, 1000,)
 	
 	aboutWrapper.show();
