@@ -22,7 +22,7 @@ a {
 }
 
 .nav-and-contact-viewer {
-/*	background-color: yellow;*/
+	background-color: yellow;
 	display: flex;
 	height: 35vh;
 	width: 100%;
@@ -53,12 +53,11 @@ a {
 }
 
 .contact-viewer {
-/*	background-color: orange;*/
+	background-color: orange;
 	width: 45%;
 }
 
 .contact-item {
-	/*background-color: red;*/
 	box-sizing: border-box;
 	display: flex;
 	height: 50px;
@@ -70,6 +69,7 @@ a {
 }
 
 .email {
+
 /*	background-color: yellow;*/
 /*	top: 100%;*/
 }
@@ -87,6 +87,8 @@ a {
 .github {
 	/*background-color: blue;*/
 	/*top: 25%;*/
+
+
 }
 
 
