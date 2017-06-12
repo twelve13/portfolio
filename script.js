@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 var aboutButton = $(".about-button");
 var projectsButton = $(".projects-button");
 var contactButton = $(".contact-button");
@@ -261,4 +263,6 @@ cache.on("click", function(){
 	endangeredProject.hide();
 	simonProject.hide();
 	cacheProject.show();
+})
+
 })
