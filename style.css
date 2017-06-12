@@ -128,12 +128,22 @@ a {
 span {
 	font-style: italic;
 }
+
+.about-wrapper {
+/*	background-color: yellow;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
 .about-listing {
+/*	background-color: purple;*/
 	box-sizing: border-box;
 	font-family: viga;
 	font-size: 130%;
 	padding-top: 2%;
 	text-align: center;
+	width: 90%;
 }
 
 .about-listing:nth-of-type(1) {
@@ -186,6 +196,7 @@ span {
 
 .experience p {
 	bottom: 100px;
+	color: #3b3b3b;
 	font-weight: bold;
 	position: relative;
 	text-align: center;
