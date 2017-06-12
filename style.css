@@ -152,84 +152,43 @@ span {
 	display: flex;
 	flex-wrap: wrap;
 	font-family: arial;
-	height: 200px;
+	height: 150px;
 	justify-content: center;
 	margin-top: 1%;
 }
 
-.arts-wrapper, .travel-wrapper, .improv-wrapper, .forensics-wrapper, .webdev-wrapper {
-	position: absolute;
-}
-
-.arts-wrapper {
-	left: 20%;
-}
-
-.travel-wrapper {
-	left: 29%;
-}
-
-.improv-wrapper {
-	left: 44%;
-}
-
-.forensics-wrapper {
-	left: 55%;
-}
-
-.webdev-wrapper {
-	left: 38%;
-}
-
-.arts, .travel, .improv, .forensics, .webdev {
+.arts, .travel, .developer, .forensics, .improv {
+	border-left: solid transparent 60px;
+	border-right: solid transparent 60px;
 	height: 0px;
 	width: 0px;
 }
 
 .arts {
-	border-bottom: solid #857a83 110px;
-	border-left: solid transparent 110px;
-	border-right: solid transparent 130px;
+	border-bottom: solid #857a83 60px;
 }
 
 .travel {
-	border-bottom: solid #5EBEB3 150px;
-	border-left: solid transparent 110px;
-	border-right: solid transparent 110px;
+	border-bottom: solid #5EBEB3 60px;
 }
 
-.improv {
-	border-bottom: solid #6EE4D3 130px;
-	border-left: solid transparent 160px;
-	border-right: solid transparent 130px;
+.developer {
+	border-bottom: solid #6EE4D3 60px;
 }
 
 .forensics {
-	border-bottom: solid #B9F2D2 120px;
-	border-left: solid transparent 135px;
-	border-right: solid transparent 120px;
+	border-bottom: solid #B9F2D2 60px;
 }
 
-.webdev {
-	border-bottom: solid #F1E7DE 180px;
-	border-left: solid transparent 100px;
-	border-right: solid transparent 100px;
+.improv {
+	border-bottom: solid #F1E7DE 60px;
 }
 
-.arts-text, .travel-text, .improv-text, .forensics-text, .webdev-text {
-	bottom: 85px;
-	font-size: 80%;
+.experience p {
+	bottom: 100px;
 	font-weight: bold;
 	position: relative;
 	text-align: center;
-}
-
-.arts-text {
-	right: 10px;
-}
-
-.travel-text {
-	right: 12px;
 }
 
 .projects-outer {
