@@ -53,12 +53,12 @@ a {
 }
 
 .contact-viewer {
-/*	background-color: orange;*/
+	background-color: orange;
 	width: 45%;
 }
 
 .contact-item {
-/*	background-color: red;*/
+	background-color: red;
 	box-sizing: border-box;
 	display: flex;
 	height: 25%;
@@ -68,22 +68,22 @@ a {
 }
 
 .email {
-	/*background-color: yellow;*/
+	background-color: yellow;
 	top: 100%;
 }
 
 .resume {
-/*	background-color: limegreen;*/
+	background-color: limegreen;
 	top: 75%;
 }
 
 .linkedin {
-/*	background-color: green;*/
+	background-color: green;
 	top: 50%;
 }
 
 .github {
-/*	background-color: blue;*/
+	background-color: blue;
 	top: 25%;
 }
 
