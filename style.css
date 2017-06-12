@@ -68,31 +68,6 @@ a {
 	width: 400px;
 }
 
-.email {
-
-/*	background-color: yellow;*/
-/*	top: 100%;*/
-}
-
-.resume {
-/*	background-color: limegreen;*/
-/*	top: 75%;*/
-}
-
-.linkedin {
-/*	background-color: green;*/
-	/*top: 50%;*/
-}
-
-.github {
-	/*background-color: blue;*/
-	/*top: 25%;*/
-
-
-}
-
-
-
 .bulletpoint {
 	background-color: black;
 	border-radius: 12px;
@@ -115,7 +90,7 @@ a {
 /*	background-color: orange;*/
 	display: flex;
 	font-family: 'Viga', sans-serif;
-	height: 40%;
+	height: 40vh;
 	justify-content: center;
 	width: 100%;
 }
@@ -167,11 +142,6 @@ span {
 	padding-top: 0;
 }
 
-/*.about-listing:nth-of-type(2) {
-	padding-left: 12%;
-	padding-right: 12%;
-}*/
-
 .about-listing:nth-of-type(3) {
 	padding-left: 2%;
 	padding-right: 2%;
@@ -184,10 +154,10 @@ span {
 	font-family: arial;
 	height: 200px;
 	justify-content: center;
-	margin-top: 2%;
+	margin-top: 1%;
 }
 
-.arts-wrapper, .travel-wrapper, .wdi-wrapper, .forensics-wrapper, .improv-wrapper {
+.arts-wrapper, .travel-wrapper, .improv-wrapper, .forensics-wrapper, .webdev-wrapper {
 	position: absolute;
 }
 
@@ -199,19 +169,19 @@ span {
 	left: 29%;
 }
 
-.wdi-wrapper {
-	left: 38%;
+.improv-wrapper {
+	left: 44%;
 }
 
 .forensics-wrapper {
-	left: 60%;
+	left: 55%;
 }
 
-.improv-wrapper {
-	left: 52%;
+.webdev-wrapper {
+	left: 38%;
 }
 
-.arts, .travel, .wdi, .forensics, .improv {
+.arts, .travel, .improv, .forensics, .webdev {
 	height: 0px;
 	width: 0px;
 }
@@ -228,7 +198,7 @@ span {
 	border-right: solid transparent 110px;
 }
 
-.wdi {
+.improv {
 	border-bottom: solid #6EE4D3 130px;
 	border-left: solid transparent 160px;
 	border-right: solid transparent 130px;
@@ -240,20 +210,26 @@ span {
 	border-right: solid transparent 120px;
 }
 
-.improv {
+.webdev {
 	border-bottom: solid #F1E7DE 180px;
 	border-left: solid transparent 100px;
 	border-right: solid transparent 100px;
 }
 
-.arts-text, .travel-text, .wdi-text, .forensics-text, .improv-text {
-	bottom: 80px;
+.arts-text, .travel-text, .improv-text, .forensics-text, .webdev-text {
+	bottom: 85px;
+	font-size: 80%;
+	font-weight: bold;
 	position: relative;
 	text-align: center;
 }
 
 .arts-text {
 	right: 10px;
+}
+
+.travel-text {
+	right: 12px;
 }
 
 .projects-outer {
@@ -342,6 +318,7 @@ span {
 	display: flex;
 	font-family: 'Permanent Marker', cursive;
 	font-size: 300%;
+	height: 25vh;
 	justify-content: flex-end;
 	width: 80%;
 }
