@@ -72,6 +72,7 @@ var aboutExpand = function() {
 		right: -(0.35*width)
 	}, 1000,)
 	
+	aboutListing.css("font-size", 0.016*width)
 	aboutWrapper.show();
 	aboutClose.show();
 	aboutClicked = true;
