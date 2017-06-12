@@ -152,10 +152,10 @@ span {
 	padding-top: 0;
 }
 
-.about-listing:nth-of-type(3) {
+/*.about-listing:nth-of-type(3) {
 	padding-left: 2%;
 	padding-right: 2%;
-}
+}*/
 
 .experience {
 	align-items: flex-end;
@@ -298,3 +298,9 @@ span {
 	width: 100%;
 }
 
+@media (max-width: 768px) {
+	.about-listing {
+	color: red;
+	font-size: 100%;
+	}
+}
