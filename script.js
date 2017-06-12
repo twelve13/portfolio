@@ -38,20 +38,20 @@ var aboutClicked = false;
 var projectsClicked = false;
 var contactClicked = false;
 
-aboutWrapper.hide();
-aboutClose.hide();
-aboutViewer.hide();
-projectsWrapper.hide();
-endangeredProject.hide();
-simonProject.hide();
-cacheProject.hide();
-projectsViewer.hide();
-contactLink.hide();
-contactClose.hide();
+aboutWrapper.addClass("hide");
+aboutClose.addClass("hide");
+aboutViewer.addClass("hide");
+projectsWrapper.addClass("hide");
+endangeredProject.addClass("hide");
+simonProject.addClass("hide");
+cacheProject.addClass("hide");
+projectsViewer.addClass("hide");
+contactLink.addClass("hide");
+contactClose.addClass("hide");
 
 
 var aboutExpand = function() {
-	aboutViewer.show();
+	aboutViewer.removeClass("hide");
 
 	$("body").animate({
 		scrollTop: $(document).height() - $(window).height()
@@ -67,8 +67,8 @@ var aboutExpand = function() {
 		right: "-475%"
 	}, 1000,)
 	
-	aboutWrapper.show();
-	aboutClose.show();
+	aboutWrapper.removeClass("hide");
+	aboutClose.removeClass("hide");
 	aboutClicked = true;
 };
 
