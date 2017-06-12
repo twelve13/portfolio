@@ -40,20 +40,20 @@ var aboutClicked = false;
 var projectsClicked = false;
 var contactClicked = false;
 
-aboutWrapper.addClass("hide");
-aboutClose.addClass("hide");
-aboutViewer.addClass("hide");
-projectsWrapper.addClass("hide");
-endangeredProject.addClass("hide");
-simonProject.addClass("hide");
-cacheProject.addClass("hide");
-projectsViewer.addClass("hide");
-contactLink.addClass("hide");
-contactClose.addClass("hide");
+aboutWrapper.hide();
+aboutClose.hide();
+aboutViewer.hide();
+projectsWrapper.hide();
+endangeredProject.hide();
+simonProject.hide();
+cacheProject.hide();
+projectsViewer.hide();
+contactLink.hide();
+contactClose.hide();
 
 
 var aboutExpand = function() {
-	aboutViewer.removeClass("hide");
+	aboutViewer.show();
 
 	$("body").animate({
 		scrollTop: $(document).height() - $(window).height()
@@ -69,8 +69,8 @@ var aboutExpand = function() {
 		right: "-475%"
 	}, 1000,)
 	
-	aboutWrapper.removeClass("hide");
-	aboutClose.removeClass("hide");
+	aboutWrapper.show();
+	aboutClose.show();
 	aboutClicked = true;
 };
 
