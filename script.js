@@ -41,7 +41,8 @@ var projectsClicked = false;
 var contactClicked = false;
 
 var $window = $(window);
-var width = $window.width()
+var width = $window.width();
+var height = $window.height();
 
 aboutWrapper.hide();
 aboutClose.hide();
@@ -72,10 +73,14 @@ var aboutExpand = function() {
 		right: -(0.35*width)
 	}, 1000,)
 	
-	aboutListing.css("font-size", 0.016*width)
 	aboutWrapper.show();
 	aboutClose.show();
 	aboutClicked = true;
+	if(width > height){
+		aboutListing.css("font-size", 0.016*width)
+	}else{
+		aboutListing.css("font-size", 0.025*width)
+	}
 };
 
 
