@@ -58,33 +58,35 @@ a {
 }
 
 .contact-item {
-/*	background-color: red;*/
+	/*background-color: red;*/
 	box-sizing: border-box;
 	display: flex;
-	height: 25%;
-	padding: 15px 50px;
-	position: relative;
-	width: 80%;
+	height: 50px;
+	left: 12px;
+/*	padding: 15px 50px;*/
+	position: absolute;
+	top: 35px;
+	width: 400px;
 }
 
 .email {
-	/*background-color: yellow;*/
-	top: 100%;
+/*	background-color: yellow;*/
+/*	top: 100%;*/
 }
 
 .resume {
 /*	background-color: limegreen;*/
-	top: 75%;
+/*	top: 75%;*/
 }
 
 .linkedin {
 /*	background-color: green;*/
-	top: 50%;
+	/*top: 50%;*/
 }
 
 .github {
-/*	background-color: blue;*/
-	top: 25%;
+	/*background-color: blue;*/
+	/*top: 25%;*/
 }
 
 
@@ -313,7 +315,7 @@ span {
 }
 
 .contact-outer {
-/*	background-color: gray;*/
+	/*background-color: gray;*/
 	height: 300px;
 	position: relative;
 	width: 65px;
@@ -321,10 +323,10 @@ span {
 
 .contact {
 	background-color: black;
-	height: 150px;
+	height: 120px;
 	margin: 0 15px;
 	position: relative;
-	top: 70px;
+	top: 100px;
 	width: 32px;
 }
 
