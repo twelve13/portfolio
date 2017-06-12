@@ -67,11 +67,19 @@ var aboutExpand = function() {
 		top: "+=60vh",
 	}, 1000)
 
-	about.animate({
-		height: "80vh",
-		width: 0.7*width,
-		right: -(0.35*width)
-	}, 1000,)
+	if(width > height){
+		about.animate({
+			height: "80vh",
+			width: 0.9*width,
+			right: -(0.45*width)
+		}, 1000,)
+	}else{
+		about.animate({
+			height: "70vh",
+			width: 0.7*width,
+			right: -(0.35*width)
+		}, 1000,)
+	}
 	
 	aboutWrapper.show();
 	aboutClose.show();
@@ -80,7 +88,7 @@ var aboutExpand = function() {
 		aboutListing.css("font-size", 0.016*width)
 	}else{
 		aboutListing.css("font-size", 0.025*width)
-	}
+	};
 };
 
 
