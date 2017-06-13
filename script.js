@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+var redirect = $(".redirect");
+
 var aboutButton = $(".about-button");
 var projectsButton = $(".projects-button");
 var contactButton = $(".contact-button");
@@ -44,6 +46,7 @@ var $window = $(window);
 var width = $window.width();
 var height = $window.height();
 
+redirect.hide();
 aboutWrapper.hide();
 aboutClose.hide();
 aboutViewer.hide();
