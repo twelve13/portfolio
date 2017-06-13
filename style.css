@@ -206,6 +206,7 @@ span {
 	background-color: black;
 	height: 180px;
 	margin: 0 15px;
+	overflow: hidden;
 	position: relative;
 	top: 40px;
 	width: 32px;
@@ -275,7 +276,7 @@ span {
 .contact-close {
 	left: 42.5%;
 	position: absolute;
-	top: 22%;
+	top: 25%;
 }
 
 .title-wrapper {
