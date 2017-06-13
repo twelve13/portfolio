@@ -172,17 +172,17 @@ var projectsShrink = function(){
 
 var contactExpand = function(){
 		email.animate({
-		top: "-=36vh",
+		top: "-=32vh",
 		}, 1000)
 		resume.animate({
-		top: "-=27vh",
+		top: "-=24vh",
 		}, 1000)
 		contactClicked = true
 		linkedin.animate({
-		top: "-=18vh",
+		top: "-=16vh",
 		}, 1000)
 		github.animate({
-		top: "-=9vh",
+		top: "-=8vh",
 		}, 1000)
 		contactLink.show(2000);
 		contactClose.show(3000);
