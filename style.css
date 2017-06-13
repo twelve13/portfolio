@@ -61,10 +61,10 @@ a {
 	box-sizing: border-box;
 	display: flex;
 	height: 50px;
-	left: 12px;
+	left: 13px;
 /*	padding: 15px 50px;*/
 	position: absolute;
-	top: 35px;
+	top: 50px;
 	width: 400px;
 }
 
