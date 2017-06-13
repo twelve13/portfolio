@@ -191,17 +191,17 @@ var contactExpand = function(){
 
 var contactShrink = function(){
 		email.animate({
-		top: "+=36vh",
+		top: "+=32vh",
 		}, 1000)
 		resume.animate({
-		top: "+=27vh",
+		top: "+=24vh",
 		}, 1000)
 		contactClicked = true
 		linkedin.animate({
-		top: "+=18vh",
+		top: "+=16vh",
 		}, 1000)
 		github.animate({
-		top: "+=9vh",
+		top: "+=8vh",
 		}, 1000)
 		contactLink.hide(2000);
 		contactClose.hide(2000);
